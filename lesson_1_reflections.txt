@@ -1,0 +1,76 @@
+main commands:
+http://johnatten.com/2012/09/08/basic-git-command-line-reference-for-windows-users/
+
+1. How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+It showed exactly what changed between different versions of the file.
+
+2. How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+I can see the evolution of the programs over time.
+It is easier to retrieve / restore code if I ever need it.
+
+3. What do you think are the pros and cons of manually choosing when to create a
+ commit, like you do in Git, vs having versions automatically saved, like Google
+ Docs does?
+
+ Pro's: I control the moment when I commit the changes - I have a better idea
+ when enough progress was made
+ Con's: I may choose arbitrarily the moment for the commits, doing too much or
+ too little.
+
+ 4. Why do you think some version control systems, like Git, allow saving
+ multiple files in one commit, while others, like Google Docs, treat each file
+ separately?
+
+ Git is specially designed for coding, it should allow changes across multiple
+ files in one commit, in order to allow for the entire logic of a change in code
+
+ 5. How can you use the commands git log and git diff to view the history of
+ files?
+
+ Use git log --stat to see the entire history of the repository (also commit
+ messages and statistics of changes); press q to get out of git log.
+ Use git diff previous_commit current_commit to see the changes between two
+ commits.
+
+ 6. How might using version control make you more confident to make changes that
+ could break something?
+
+ I know I can go back to a previous version of the code.
+
+ 7. Now that you have your workspace set up, what do you want to try using Git
+ for?
+
+ All coding exercises.
+
+ for checking out a previous version of the file:
+git log - get the commit IDs
+ git checkout [commit_ID]
+when done - to go back to master branch:
+ git switch -
+
+ this works better:
+ git checkout master
+
+ Compare two commits, printing each line that is present in one commit but not
+ the other.
+ git diff will do this. It takes two arguments - the two commit ids to compare.
+
+ Make a copy of an entire Git repository, including the history, onto your own
+ computer.
+ git clone will do this. It takes one argument - the url of the repository to
+ copy.
+
+ Temporarily reset all files in a directory to their state at the time of a
+ specific commit.
+ git checkout will do this. It takes one argument - the commit ID to restore.
+
+ Show the commits made in this repository, starting with the most recent.
+ git log will do this. It doesn't take any arguments.
+
+initialize a repository: go to the appropriate folder, and run git init
+
+git status   - shows which files have changed since the last commit
