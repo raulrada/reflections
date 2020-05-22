@@ -1,0 +1,14 @@
+Style guide for commit messages:
+https://udacity.github.io/git-styleguide/
+
+
+1. What happens when you initialize a repository? Why do you need to do it?
+
+You create the .git folder and you have the setup ready to commit files /
+sub-folders and to keep track of changes
+
+2. How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area is an 'interim' location, into which / from which you an add /
+remove files / sub-folder before committing the changes.
