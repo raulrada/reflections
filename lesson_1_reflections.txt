@@ -49,10 +49,9 @@ It is easier to retrieve / restore code if I ever need it.
  for checking out a previous version of the file:
 git log - get the commit IDs
  git checkout [commit_ID]
-when done - to go back to master branch:
- git switch -
 
- this works better:
+
+ go back to master branch:
  git checkout master
 
  Compare two commits, printing each line that is present in one commit but not
