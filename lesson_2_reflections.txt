@@ -31,6 +31,13 @@ Branches are useful for working on different versions of the same program.
 5. How do the diagrams help you visualize the branch structure?
 
 They show the entire branch structure of the commit history.
+
+6. What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+
+The changes done on parallel branches are consolidated.
+The various commits on different branches have different parents.
+
 -------------------------------------------------------------------------------
 
 !!!!
@@ -63,6 +70,28 @@ the two branches as well.
 for example: git log --graph --oneline master coins     - graphs the commit
 history for master branch and for coins branch, showing the moment of the split.
 
+git gc            - manually call git's garbage collector. It removes, for
+instance, commits left behind by deleted branches. Such commits are still
+accessible by their commit IDs, but they are not reachable from existing
+branches.
+When deleting a branch, I actually delete the label, not the commits themselves,
+as long as those commits can still be reached from the existing branches.
+If the commits of a deleted branch can no longer be accessed from the existing
+branches, the deletion effectively discards the unreachable commits.
+
+git merge branch1 branch2      - merge two branches
+
+git show [commitID]            - changes in the given commit vs its parent
+(whoever the parent may be); when merging two branches, it is possible that two
+successive commits would not represent successive iterations of the program (if
+they come from different branches) and, therefore, using git diff would not show
+only what was added in the latter commit vs the former, but other changes as
+well - coming from other commits on the latter's branch.
+
+git branch -d branch_name        - deletes a branch1
+
+git checkout -b new_branch_name  - it is equivalent to running two commands:
+git branch new_branch_name, and, then, git checkout new_branch_name.
 
 Terminology:
 - current last commit of a branch - the tip of that branch;
