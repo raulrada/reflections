@@ -12,6 +12,17 @@ and conflicts may arise. It is preferable that I choose when to sync the remote
 and the local repositories, and to resolve the potential conflicts when I want
 to.
 
+3. Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
+
+Use forks to clone a repository on github directly; it gives credit to the
+owner of the repository. After forking, I can edit the forked repository.
+
+Use clone to clone (locally or from github) a repository.
+
+Use branches within a given repository (in order to try out different things,
+for instance).
+
 --------------------------------------------------------------------------------
 To interact with github:
 
