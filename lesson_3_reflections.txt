@@ -15,6 +15,7 @@ the url can be found in the repository on github
 I could use any name instead of "origin". It's the name I will use in this
 repository to refer to the repository on github. If I only have one remote, it's
 standard to name it "origin"
+A remote in my local repository is basically a reference to another repository.
 
 git remote        - see the remote repositories created
 
