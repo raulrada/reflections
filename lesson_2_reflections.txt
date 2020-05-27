@@ -102,6 +102,10 @@ git branch -d branch_name        - deletes a branch1
 git checkout -b new_branch_name  - it is equivalent to running two commands:
 git branch new_branch_name, and, then, git checkout new_branch_name.
 
+List all files in repository:
+git ls-files
+
+--------------------------------------------------------------------------------
 Terminology:
 - current last commit of a branch - the tip of that branch;
 - merging: process of combining two commits;
