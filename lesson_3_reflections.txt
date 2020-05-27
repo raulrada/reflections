@@ -1,1 +1,36 @@
 1. When would you want to use a remote repository rather than keeping all your work local?
+
+
+
+
+--------------------------------------------------------------------------------
+To interact with github:
+
+go to github and create an empty repository.
+
+then, in bash use the following command, to add the repository on github as a
+remote:
+git remote add origin [url]
+the url can be found in the repository on github
+I could use any name instead of "origin". It's the name I will use in this
+repository to refer to the repository on github. If I only have one remote, it's
+standard to name it "origin"
+
+git remote        - see the remote repositories created
+
+to verify that the url was added correctly - use the following command to get
+the verbose (-v) information from the remote:
+
+git remote -v
+
+In order to send my changes to the remote:
+git push [remote_to_which_I_send_changes] [local_branch_to_be_pushed]
+
+Pull from github (pull all commits reachable from the specified branch on
+github):
+git pull [remote_name] [branch_I_want_to_pull]
+e.g.:
+git pull origin master
+
+
+--------------------------------------------------------------------------------
