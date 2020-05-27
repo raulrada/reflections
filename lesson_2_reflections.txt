@@ -38,6 +38,15 @@ in the diagram the way we do?
 The changes done on parallel branches are consolidated.
 The various commits on different branches have different parents.
 
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Pro's of automatic commits: there is no need for the programmers to do
+comparisons in situations where it is obvious what the merged files should look
+like.
+
+Con's of automatic commits: they do not work for more complicated situations
+where conflicts arise between the commits we want to merge.
 -------------------------------------------------------------------------------
 
 !!!!
