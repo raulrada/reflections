@@ -46,6 +46,11 @@ It is easier to retrieve / restore code if I ever need it.
 
  All coding exercises.
 
+--------------------------------------------------------------------------------
+
+to clone a repository:
+git clone [url]
+
  for checking out a previous version of the file:
 git log - get the commit IDs
  git checkout [commit_ID]
