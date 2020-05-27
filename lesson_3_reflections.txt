@@ -23,6 +23,12 @@ Use clone to clone (locally or from github) a repository.
 Use branches within a given repository (in order to try out different things,
 for instance).
 
+4. What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+If too many changes are added to the remote and to the local repositories, then
+it is more likely that conflicts will arise when we do the merge down the line. 
+
 --------------------------------------------------------------------------------
 To interact with github:
 
@@ -54,9 +60,24 @@ git pull [remote_name] [branch_I_want_to_pull]
 e.g.:
 git pull origin master
 
+Update the local copy of the remote branch (origin/master), leaving the actual
+local version alone (the master branch - which may have been updated from
+origin/master). When there are potentially conflicting changes, use git fetch!!!
+Then I can use git log and git diff to see the changes both on the local and the
+remote repositories.
+e.g.: git fetch origin     - updates all local copies of every branch for the
+origin remote (also including the origin/master local copy of the remote branch).
+Then I can merge origin/master into master.
+git pull origin master - is the same as git fetch origin, followed by
+git merge master origin/master. When doing git pull, first, the remote branch
+gets fetched, updating the local copy of the remote branch. Then, that branch
+gets merged into the local one.
+
 With Git for Windows, running the following in the command line will store your
 credentials (so you don't need to provide your credentials related to github
 whenever you push something to github):
 git config --global credential.helper wincred
+
+
 
 --------------------------------------------------------------------------------
