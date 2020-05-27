@@ -4,8 +4,13 @@ work local?
 Whenever cooperating with other persons, or when working from multiple
 computers, or in order to back up my work.
 
+2. Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
 
-
+I may be working on the same file that was modified in the remote repository,
+and conflicts may arise. It is preferable that I choose when to sync the remote
+and the local repositories, and to resolve the potential conflicts when I want
+to.
 
 --------------------------------------------------------------------------------
 To interact with github:
