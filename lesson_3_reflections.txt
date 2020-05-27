@@ -43,5 +43,9 @@ git pull [remote_name] [branch_I_want_to_pull]
 e.g.:
 git pull origin master
 
+With Git for Windows, running the following in the command line will store your
+credentials (so you don't need to provide your credentials related to github
+whenever you push something to github):
+git config --global credential.helper wincred
 
 --------------------------------------------------------------------------------
