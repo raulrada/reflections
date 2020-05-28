@@ -37,6 +37,16 @@ I don't see anything that would necessarily be easier without using git/github.
 But working on the same file, with changes made by multiple members of the team,
 definitely seems to be much harder without git / github.
 
+6. When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+Whenever trying out something new, which may mess up the functioning of the
+program, it is preferable to use branches. The same goes for situations where
+one needs to coordinate with other team members on the changes that occur in
+the code.
+
+Working directly on the master branch may be a bit quicker.
+
 --------------------------------------------------------------------------------
 To interact with github:
 
